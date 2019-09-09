@@ -1,0 +1,10 @@
+E:\tp1\bin\Debug\tp1.exe.config
+E:\tp1\bin\Debug\tp1.exe
+E:\tp1\bin\Debug\tp1.pdb
+E:\tp1\obj\Debug\tp1.csprojAssemblyReference.cache
+E:\tp1\obj\Debug\tp1.FromCalculadora.resources
+E:\tp1\obj\Debug\tp1.Properties.Resources.resources
+E:\tp1\obj\Debug\tp1.csproj.GenerateResource.cache
+E:\tp1\obj\Debug\tp1.csproj.CoreCompileInputs.cache
+E:\tp1\obj\Debug\tp1.exe
+E:\tp1\obj\Debug\tp1.pdb

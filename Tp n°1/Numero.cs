@@ -1,0 +1,173 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace tp1
+{
+    public class Numero
+    {
+        private double numero;
+
+        public Numero(double num) {
+
+            this.numero = num;
+
+        }
+
+        public Numero() : this(0) { }
+
+        public Numero(string strNumero) {
+
+            if (double.TryParse(strNumero, out this.numero)) {
+
+            }
+
+        }
+
+        private double validarNumero(string strNumero) {
+
+            double numero;
+
+            if (!(double.TryParse(strNumero, out numero))) {
+                numero = 0;
+            }
+
+            return numero;
+        }
+
+        private string setNumero { set {
+
+                this.numero = validarNumero(value);
+
+            } }
+
+        public string BinarioDecimal(string Binario) {
+
+
+            string x = "";
+            double bin = 0;
+            int exp = 0;
+            bool EsBinario = true;
+
+            for (int j = 0; j < Binario.Length; j++) {
+
+                if (Binario[j] != '1') {
+                    if (Binario[j] != '0') {
+                        EsBinario = false;
+                        x = "No es valido";
+                    }
+                }
+
+            }
+            if (EsBinario)
+            {
+                for (int i = Binario.Length - 1; i >= 0; i--)
+                {
+
+                    if (Binario[i] == '1')
+                    {
+
+                        bin += Math.Pow(2, exp);
+
+                    }
+                    exp++;
+                }
+            }
+
+            x = bin.ToString();
+
+            return x;
+        }
+
+        public string decimalBinario(double Decimal) {
+
+            string binario = "";
+            int oper = Convert.ToInt32(Decimal);
+            string dec = Decimal.ToString();
+            bool todoOk = true;
+            
+
+
+            for (int x = 0; x < dec.Length; x++) {
+                if (dec[x] == '-' || dec[x] == ',') {
+                    todoOk = false;
+                    binario = "No es valido";
+                }
+
+            }
+
+            
+            
+                if (todoOk)
+                {
+                    while (oper > 0)
+                    {
+                        binario = oper % 2 + binario;
+                        oper = oper / 2;
+
+                    }
+
+                }
+            
+            return binario;
+
+        }
+
+
+        public string decimalBinario(string Decimal) {
+
+            double numero = Convert.ToDouble(Decimal);
+
+            return decimalBinario(numero);          
+
+        }
+
+        public static double operator + (Numero a, Numero b) {
+
+            double total = a.numero + b.numero;
+
+            return total;
+
+        }
+
+        public static double operator -(Numero a, Numero b) {
+
+            double total = a.numero - b.numero;
+
+            return total;
+        }
+
+        public static double operator *(Numero a, Numero b) {
+
+            double total = a.numero * b.numero;
+
+            return total;
+
+        }
+
+        public static double operator /(Numero a, Numero b) {
+
+            double total;
+
+            if (b.numero > 0) {
+                total = a.numero / b.numero;
+            }
+            else {
+                total = double.MinValue;
+            }
+
+            return total;
+        }
+
+
+
+
+
+
+
+
+
+    }
+}
