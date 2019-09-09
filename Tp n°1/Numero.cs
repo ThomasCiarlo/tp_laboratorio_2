@@ -37,7 +37,7 @@ namespace tp1
             return numero;
         }
 
-        private string setNumero { set {
+        private string SetNumero { set {
 
                 this.numero = validarNumero(value);
 
@@ -56,7 +56,7 @@ namespace tp1
                 if (Binario[j] != '1') {
                     if (Binario[j] != '0') {
                         EsBinario = false;
-                        x = "No es valido";
+                        x = "No es Valido";
                     }
                 }
 
@@ -74,9 +74,10 @@ namespace tp1
                     }
                     exp++;
                 }
+                x = bin.ToString();
             }
 
-            x = bin.ToString();
+            
 
             return x;
         }
@@ -118,9 +119,14 @@ namespace tp1
 
         public string decimalBinario(string Decimal) {
 
-            double numero = Convert.ToDouble(Decimal);
+            double numero;
+            string retorno = "No es Valido";
 
-            return decimalBinario(numero);          
+            if (double.TryParse(Decimal, out numero)) {
+               retorno = decimalBinario(numero);
+            }
+
+            return retorno;          
 
         }
 
