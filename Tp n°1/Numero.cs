@@ -26,7 +26,7 @@ namespace tp1
 
         }
 
-        private double validarNumero(string strNumero) {
+        private double ValidarNumero(string strNumero) {
 
             double numero;
 
@@ -39,7 +39,7 @@ namespace tp1
 
         private string SetNumero { set {
 
-                this.numero = validarNumero(value);
+                this.numero = ValidarNumero(value);
 
             } }
 
@@ -82,7 +82,7 @@ namespace tp1
             return x;
         }
 
-        public string decimalBinario(double Decimal) {
+        public string DecimalBinario(double Decimal) {
 
             string binario = "";
             int oper = Convert.ToInt32(Decimal);
@@ -117,13 +117,13 @@ namespace tp1
         }
 
 
-        public string decimalBinario(string Decimal) {
+        public string DecimalBinario(string Decimal) {
 
             double numero;
             string retorno = "No es Valido";
 
             if (double.TryParse(Decimal, out numero)) {
-               retorno = decimalBinario(numero);
+               retorno = DecimalBinario(numero);
             }
 
             return retorno;          

@@ -80,7 +80,7 @@ namespace tp1
 
             Numero numBinario = new Numero();
 
-            binario = numBinario.decimalBinario(lblResultado.Text);
+            binario = numBinario.DecimalBinario(lblResultado.Text);
 
             lblResultado.Text = binario;
 
