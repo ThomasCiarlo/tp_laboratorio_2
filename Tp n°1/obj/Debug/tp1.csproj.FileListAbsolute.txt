@@ -18,3 +18,16 @@ C:\Users\Tomas Ciarl\Desktop\Facu\2 cuatrimestre\Tps\tp_laboratorio_2\Tp n°1\ob
 C:\Users\Tomas Ciarl\Desktop\Facu\2 cuatrimestre\Tps\tp_laboratorio_2\Tp n°1\obj\Debug\tp1.csproj.CoreCompileInputs.cache
 C:\Users\Tomas Ciarl\Desktop\Facu\2 cuatrimestre\Tps\tp_laboratorio_2\Tp n°1\obj\Debug\tp1.exe
 C:\Users\Tomas Ciarl\Desktop\Facu\2 cuatrimestre\Tps\tp_laboratorio_2\Tp n°1\obj\Debug\tp1.pdb
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\tp1.csprojAssemblyReference.cache
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\tp1.FromCalculadora.resources
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\tp1.Properties.Resources.resources
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\tp1.csproj.GenerateResource.cache
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\tp1.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\tp1.exe
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\tp1.pdb
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\bin\Debug\tp1.exe.config
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\bin\Debug\tp1.exe
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\bin\Debug\tp1.pdb
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\bin\Debug\Entidades.dll
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\bin\Debug\Entidades.pdb
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\tp1.csproj.CopyComplete

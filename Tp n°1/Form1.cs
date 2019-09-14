@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace tp1
 {
     public partial class FromCalculadora : Form
@@ -48,15 +50,19 @@ namespace tp1
             result = resultado.ToString();
 
             lblResultado.Text = result;
-                     
-            
+
+            bntConverBinario.Enabled = true;
+            btnConverDecimal.Enabled = true;
         }
 
         private void BtnLimpiar_Click(object sender, EventArgs e)
         {
+            cmbOperador.Text = "";
             txtNumero1.Text = "";
             txtNumero2.Text = "";
             lblResultado.Text = "";
+            btnConverDecimal.Enabled = true;
+            bntConverBinario.Enabled = true;
         }
 
         private void BtnCerrar_Click(object sender, EventArgs e)
@@ -72,6 +78,7 @@ namespace tp1
 
             conver = numDecimal.BinarioDecimal(lblResultado.Text);
             lblResultado.Text = conver;
+            btnConverDecimal.Enabled = false;
         }
 
         private void BntConverBinario_Click(object sender, EventArgs e)
@@ -83,6 +90,8 @@ namespace tp1
             binario = numBinario.DecimalBinario(lblResultado.Text);
 
             lblResultado.Text = binario;
+
+            bntConverBinario.Enabled = false;
 
 
         }
