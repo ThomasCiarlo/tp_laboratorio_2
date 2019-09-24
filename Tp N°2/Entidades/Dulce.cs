@@ -32,7 +32,7 @@ namespace Entidades_2018
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("DULCE");
-            sb.AppendLine($"Codigo de barra: {base.codigoDeBarras}\nColor: {base.colorPrimarioEmpaque}\nMarca{base.marca}");
+            sb.AppendLine($"Codigo de barra: {base.codigoDeBarras}\nColor: {base.colorPrimarioEmpaque}\nMarca: {base.marca}");
             sb.AppendLine($"CALORIAS : {this.CantidadCalorias}");
             sb.AppendLine("");
             sb.AppendLine("---------------------");
