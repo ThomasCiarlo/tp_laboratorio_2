@@ -8,12 +8,12 @@ namespace Entidades_2018
 {
     public class Snacks : Producto
     {
-       public Snacks(EMarca marca, string patente, ConsoleColor color)
+       public Snacks(EMarca marca, string codigoDeBarra, ConsoleColor colorEmpaque)
            
         {
             base.marca = marca;
-            base.codigoDeBarras = patente;
-            base.colorPrimarioEmpaque = color;
+            base.codigoDeBarras = codigoDeBarra;
+            base.colorPrimarioEmpaque = colorEmpaque;
         }
         /// <summary>
         /// Los snacks tienen 104 calorías
