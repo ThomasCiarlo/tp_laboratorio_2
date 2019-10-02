@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +8,8 @@ namespace Entidades_2018
 {
     public class Dulce : Producto
     {
-        public Dulce(EMarca marca, string patente, ConsoleColor color)
+        public Dulce(EMarca marca, string codigo, ConsoleColor color):base(codigo,marca,color)
         {
-            base.codigoDeBarras = patente;
-            base.colorPrimarioEmpaque = color;
-            base.marca = marca;
         }
 
         /// <summary>
@@ -24,7 +21,6 @@ namespace Entidades_2018
             {
                 return 80;
             }
-            set { this.CantidadCalorias = value; }
         }
 
         public override string Mostrar()

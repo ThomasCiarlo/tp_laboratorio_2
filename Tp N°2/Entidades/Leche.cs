@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,19 +13,16 @@ namespace Entidades_2018
         public enum ETipo { Entera, Descremada }
         ETipo tipo;
 
-        /// <summary>
-        /// Por defecto, TIPO será ENTERA
-        /// </summary>
-        /// <param name="marca"></param>
-        /// <param name="patente"></param>
-        /// <param name="color"></param>
-        /// 
+    /// <summary>
+    /// Por defecto, TIPO será ENTERA
+    /// </summary>
+    /// <param name="marca"></param>
+    /// <param name="patente"></param>
+    /// <param name="color"></param>
+    /// 
 
-        public Leche(EMarca marca, string patente, ConsoleColor color, ETipo tipo)
-        {
-            base.codigoDeBarras = patente;
-            base.colorPrimarioEmpaque = color;
-            base.marca = marca;
+    public Leche(EMarca marca, string codigo, ConsoleColor color, ETipo tipo) : base(codigo, marca, color)
+        {          
             this.tipo = tipo;
         }
 
@@ -41,9 +38,6 @@ namespace Entidades_2018
             get
             {
                 return 20;
-            }
-            set {
-                this.CantidadCalorias = value;
             }
         }
 
