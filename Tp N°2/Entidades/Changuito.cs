@@ -11,8 +11,8 @@ namespace Entidades_2018
     /// </summary>
     public sealed class Changuito
     {
-        List<Producto> productos;
-        int espacioDisponible;
+        private List<Producto> productos;
+        private int espacioDisponible;
         public enum ETipo
         {
             Dulce, Leche, Snacks, Todos
@@ -23,7 +23,7 @@ namespace Entidades_2018
         {
             this.productos = new List<Producto>();
         }
-        public Changuito(int espacioDisponible):this()
+        public Changuito(int espacioDisponible) : this()
         {
             this.espacioDisponible = espacioDisponible;
         }
@@ -60,16 +60,16 @@ namespace Entidades_2018
                 switch (tipo)
                 {
                     case ETipo.Snacks:
-                        if(v is Snacks)
+                        if (v is Snacks)
                             sb.AppendLine(v.Mostrar());
                         break;
                     case ETipo.Dulce:
-                        if (v is Dulce)                        
-                            sb.AppendLine(v.Mostrar());                       
+                        if (v is Dulce)
+                            sb.AppendLine(v.Mostrar());
                         break;
                     case ETipo.Leche:
-                        if (v is Leche)                       
-                            sb.AppendLine(v.Mostrar());                      
+                        if (v is Leche)
+                            sb.AppendLine(v.Mostrar());
                         break;
                     default:
                         sb.AppendLine(v.Mostrar());
@@ -92,13 +92,13 @@ namespace Entidades_2018
         {
             bool todoOk = true;
 
-           foreach (Producto v in c.productos)
+            foreach (Producto v in c.productos)
             {
                 if (v == p || c.productos.Count == 6)
                 {
                     todoOk = false;
                 }
-               
+
             }
 
             if (todoOk)
@@ -106,8 +106,9 @@ namespace Entidades_2018
                 c.productos.Add(p);
             }
             return c;
-           
+
         }
+
         /// <summary>
         /// Quitará un elemento de la lista
         /// </summary>
@@ -127,8 +128,9 @@ namespace Entidades_2018
                 }
             }
 
-            if (todoOk) { 
-            c.productos.Remove(p);
+            if (todoOk)
+            {
+                c.productos.Remove(p);
             }
 
             return c;

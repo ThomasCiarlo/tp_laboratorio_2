@@ -8,9 +8,14 @@ namespace Entidades_2018
 {
     public class Snacks : Producto
     {
-       public Snacks(EMarca marca, string codigoDeBarra, ConsoleColor colorEmpaque):base(codigoDeBarra,marca,colorEmpaque)          
+        #region Constructor
+        public Snacks(EMarca marca, string codigoDeBarra, ConsoleColor colorEmpaque) : base(codigoDeBarra, marca, colorEmpaque)
         {
         }
+
+        #endregion
+
+        #region propiedades
         /// <summary>
         /// Los snacks tienen 104 calorías
         /// </summary>
@@ -22,17 +27,25 @@ namespace Entidades_2018
             }
         }
 
-        public override sealed string Mostrar()
+        #endregion
+
+        #region Metodos
+        /// <summary>
+        /// Publica todos los datos del Producto.
+        /// </summary>
+        /// <returns></returns>
+        public override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("SNACKS");
-            sb.AppendLine($"Codigo de barra: {base.codigoDeBarras}\nColor: {base.colorPrimarioEmpaque}\nMarca: {base.marca}");
-            sb.AppendLine($"CALORIAS : {this.CantidadCalorias}");
-            sb.AppendLine("");
+            sb.AppendLine($"{base.Mostrar()}");
+            sb.AppendLine($"CALORIAS : {this.CantidadCalorias}\n");
             sb.AppendLine("---------------------");
 
             return sb.ToString();
         }
+        #endregion
+
     }
 }
