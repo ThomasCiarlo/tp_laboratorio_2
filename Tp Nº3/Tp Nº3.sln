@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2047
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases Abstractas", "Clases Abstractas\Clases Abstractas.csproj", "{63319237-5E5E-4A7E-9072-97C0540DFFD4}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases Instanciables", "Clases Instanciables\Clases Instanciables.csproj", "{ED465BCA-D258-45B1-A12B-6B694C2CD1D3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excepciones", "Excepciones\Excepciones.csproj", "{61A886C5-5BDF-47C6-B0AA-0EC95A62BEC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tp n°3", "Tp n°3\Tp n°3.csproj", "{B123BA01-41B6-4289-BD52-00427E2A2E8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{61A886C5-5BDF-47C6-B0AA-0EC95A62BEC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61A886C5-5BDF-47C6-B0AA-0EC95A62BEC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61A886C5-5BDF-47C6-B0AA-0EC95A62BEC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B123BA01-41B6-4289-BD52-00427E2A2E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B123BA01-41B6-4289-BD52-00427E2A2E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B123BA01-41B6-4289-BD52-00427E2A2E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B123BA01-41B6-4289-BD52-00427E2A2E8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

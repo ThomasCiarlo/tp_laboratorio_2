@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Clases_Instanciables
 {
-    class Universidad
+    public class Universidad
     {
+        public enum EClases
+        {
+            Programacion,
+            Laboratorio,
+            Legislacion,
+            SPD
+
+        }
     }
 }

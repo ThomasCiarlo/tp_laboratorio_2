@@ -7,7 +7,67 @@ using Clases_Abstractas;
 
 namespace Clases_Instanciables
 {
-    class Profesor : Universitario
+     public sealed class Profesor : Universitario
     {
+        private Queue<Universidad.EClases> clasesDelDia;
+        private Random random;
+
+        #region Constructores
+
+        private Profesor()
+        {
+            
+        }
+
+
+        public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad) : base(id, nombre, apellido, dni, nacionalidad)
+        {
+            random = new Random();
+            this.clasesDelDia = new Queue<Universidad.EClases>();
+            _randomClases();
+        }
+
+
+        #endregion
+
+        #region Metodos
+
+        protected override string MostrarDatos()
+        {
+            StringBuilder texto = new StringBuilder(base.MostrarDatos());
+            texto.Append($"{this.ParticiparEnClase()}");
+
+            return texto.ToString();
+        }
+
+        protected override string ParticiparEnClase()
+        {
+            StringBuilder texto = new StringBuilder("Clases del dia: ");
+
+
+            foreach (Universidad.EClases c in this.clasesDelDia)
+            {
+                texto.Append(c+"\n");
+
+            }
+            return texto.ToString();
+        }
+
+        public override string ToString()
+        {
+            return this.MostrarDatos();
+        }
+
+        private void _randomClases() {
+
+            this.clasesDelDia.Enqueue((Universidad.EClases) random.Next(Enum.GetNames(typeof(Universidad.EClases)).Length));
+            this.clasesDelDia.Enqueue((Universidad.EClases) random.Next(Enum.GetNames(typeof(Universidad.EClases)).Length));
+
+        }
+
+
+
+        #endregion
+
     }
 }
