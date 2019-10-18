@@ -13,7 +13,7 @@ namespace Tp_n_3
     {
         static void Main(string[] args)
         {
-            Profesor profe = new Profesor(1, "123542", "asda1231", "41589039", Persona.ENacionalidad.Argentino);
+            Profesor profe = new Profesor(1, "Thomas", "Ciarlo", "41589039", Persona.ENacionalidad.Argentino);
             Console.WriteLine(profe.ToString());
 
             Console.ReadKey();

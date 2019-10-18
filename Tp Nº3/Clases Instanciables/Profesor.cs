@@ -10,21 +10,21 @@ namespace Clases_Instanciables
      public sealed class Profesor : Universitario
     {
         private Queue<Universidad.EClases> clasesDelDia;
-        private Random random;
+        private static Random random;
 
         #region Constructores
 
-        private Profesor()
-        {
-            
-        }
+        public Profesor() {
 
+            Profesor.random = new Random();
+            this.clasesDelDia = new Queue<Universidad.EClases>();
+            _randomClases();
+
+        }
 
         public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad) : base(id, nombre, apellido, dni, nacionalidad)
         {
-            random = new Random();
-            this.clasesDelDia = new Queue<Universidad.EClases>();
-            _randomClases();
+             
         }
 
 

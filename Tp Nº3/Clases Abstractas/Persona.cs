@@ -38,8 +38,8 @@ namespace Clases_Abstractas
         public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad)
         {
 
-            this.nombre = nombre;
-            this.apellido = apellido;
+            this.Nombre = nombre;
+            this.Apellido = apellido;
             this.nacionalidad = nacionalidad;
             this.dni = dni;
 
@@ -113,11 +113,9 @@ namespace Clases_Abstractas
         {
 
 
-            string retorno = "Nombre mal ingresado";
-            Regex Val = new Regex(@"^[a-zA-Z]+$");
-
-
-            if (Val.IsMatch(dato))
+            string retorno = "Nombre incorrecto";
+           
+            if (Regex.IsMatch(dato, @"^[a-zA-Z]+$"))
             {
                 retorno = dato;
             }

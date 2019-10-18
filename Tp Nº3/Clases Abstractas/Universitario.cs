@@ -26,7 +26,7 @@ namespace Clases_Abstractas
         {
 
             StringBuilder texto = new StringBuilder(base.ToString());
-            texto.Append($"Legajo: {this.legajo}\n");
+            texto.Append($"\nLegajo: {this.legajo}\n");
 
             return texto.ToString();
 
