@@ -8,5 +8,6 @@ namespace Excepciones
 {
     public class SinProfesorException : Exception
     {
+      public SinProfesorException() : base() { }
     }
 }

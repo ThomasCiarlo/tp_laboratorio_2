@@ -15,18 +15,21 @@ namespace Clases_Instanciables
 
     #region Constructores
 
+
+    static Profesor()
+    {
+      Profesor.random = new Random();
+    }
+
     public Profesor()
     {
-
-      Profesor.random = new Random();
-      this.clasesDelDia = new Queue<Universidad.EClases>();
-      _randomClases();
-
+           
     }
 
     public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad) : base(id, nombre, apellido, dni, nacionalidad)
     {
-
+      this.clasesDelDia = new Queue<Universidad.EClases>();
+      _randomClases();
     }
 
 
@@ -49,6 +52,7 @@ namespace Clases_Instanciables
 
       foreach (Universidad.EClases c in this.clasesDelDia)
       {
+
         texto.Append(c + "\n");
 
       }
