@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -76,6 +76,8 @@ namespace Clases_Instanciables
 
             return todoOk;
         }
+
+    
 
         public static bool operator !=(Alumno alumno, Universidad.EClases clases) {
 
