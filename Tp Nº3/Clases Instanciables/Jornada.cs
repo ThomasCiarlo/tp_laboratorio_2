@@ -1,8 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Archivos;
 
 namespace Clases_Instanciables
 {
@@ -35,8 +36,6 @@ namespace Clases_Instanciables
         }
 
         #endregion
-
-
 
         #region Metodos
 
@@ -103,6 +102,8 @@ namespace Clases_Instanciables
             {
                 texto.Append($"{a.ToString()}\n");
             }
+
+      texto.Append("< ------------------------------------------------------------------>");
 
             return texto.ToString();
 

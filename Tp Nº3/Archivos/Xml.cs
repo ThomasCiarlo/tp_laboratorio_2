@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Archivos
 {
-  class Xml<T> : IArchivo<T>
+  public class Xml<T> : IArchivo<T>
   {
     public bool Guardar(string archivo, T dato)
     {
@@ -17,7 +17,7 @@ namespace Archivos
     {
       T dato;
 
-      datos = dato;
+      datos = default(T);
 
       return true;
     }

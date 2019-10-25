@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Excepciones;
 
-namespace Clases_Abstractas
+namespace EntidadesAbstractas
 {
   public abstract class Persona
   {
@@ -18,7 +18,7 @@ namespace Clases_Abstractas
     public enum ENacionalidad
     {
       Argentino,
-      Extrajero
+      Extranjero
     }
 
     public string Nombre { get { return this.nombre; } set { this.nombre = ValidarNombreApellido(value); } }
@@ -31,12 +31,12 @@ namespace Clases_Abstractas
     
     public Persona() { }
 
-    public Persona(string nombre, string apellido, ENacionalidad nacionalidad) : this(nombre, apellido, 0, nacionalidad)
+    public Persona(string nombre, string apellido, EntidadesAbstractas.Persona.ENacionalidad nacionalidad) : this(nombre, apellido, 0, nacionalidad)
     {
 
     }
 
-    public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad)
+    public Persona(string nombre, string apellido, int dni, EntidadesAbstractas.Persona.ENacionalidad nacionalidad)
     {
 
       this.Nombre = nombre;
@@ -46,7 +46,7 @@ namespace Clases_Abstractas
 
     }
 
-    public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
+    public Persona(string nombre, string apellido, string dni, EntidadesAbstractas.Persona.ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
     {
       this.ToDNI = dni;
     }
@@ -60,7 +60,7 @@ namespace Clases_Abstractas
     {
       StringBuilder texto = new StringBuilder();
 
-      texto.Append($"Nombre: {Nombre}\nApellido: {Apellido}\nDNI: {DNI}\nNacionalidad: {Nacionalidad}");
+      texto.AppendFormat($"NOMBRE COMPLETO: {Apellido}, {Nombre}\nNACIONALIDAD: {Nacionalidad}\n");
       return texto.ToString();
     }
 
@@ -82,7 +82,7 @@ namespace Clases_Abstractas
           retorno = dato;
 
         }
-        else if (nacionalidad == ENacionalidad.Extrajero && (dato >= 90000000 && dato <= 99999999))
+        else if (nacionalidad == ENacionalidad.Extranjero && (dato >= 90000000 && dato <= 99999999))
         {
           retorno = dato;
 
@@ -90,7 +90,7 @@ namespace Clases_Abstractas
         else
         {
 
-          throw new NacionalidadInvalidaException("el dni y la nacionalidad no coinciden");
+          throw new NacionalidadInvalidaException("La nacionalidad no se coincide con el numero de Dni");
         }
       }
       else

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Clases_Abstractas;
+using EntidadesAbstractas;
 using Clases_Instanciables;
 
 namespace Clases_Instanciables

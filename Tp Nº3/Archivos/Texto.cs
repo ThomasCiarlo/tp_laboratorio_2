@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Archivos
 {
-  class Texto : IArchivo<string>
+  public class Texto : IArchivo<string>
   {
     public bool Guardar(string archivo, string datos)
     {

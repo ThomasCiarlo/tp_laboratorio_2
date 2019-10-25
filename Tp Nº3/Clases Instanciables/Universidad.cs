@@ -62,6 +62,8 @@ namespace Clases_Instanciables
 
       StringBuilder texto = new StringBuilder();
 
+      texto.Append("JORNADA: \n");
+
       foreach (Jornada j in uni.jordanas)
       {
         texto.Append($"{j.ToString()}\n");
@@ -90,7 +92,7 @@ namespace Clases_Instanciables
       foreach (Alumno c in uni.alumnos)
       {
 
-        if (a.DNI == c.DNI && a.Apellido == c.Apellido)
+        if (a == c)
         {
           todoOk = true;
         }
@@ -155,7 +157,7 @@ namespace Clases_Instanciables
       {
         if (a == clases)
         {
-          uni.alumnos.Add(a);
+          jornadaNueva.Alumnos.Add(a);
         }
 
       }
@@ -190,21 +192,19 @@ namespace Clases_Instanciables
 
     public static Universidad operator +(Universidad uni, Alumno a)
     {
-      bool todoOk = true;
 
-      foreach (Alumno p in uni.alumnos)
+
+
+      if (uni != a)
       {
-        if (p == a)
-        {
 
-          todoOk = false;
-
-        }
-      }
-
-      if (todoOk)
-      {
         uni.alumnos.Add(a);
+
+      }
+      else
+      {
+
+        throw new AlumnoRepetidoException();
       }
 
       return uni;
