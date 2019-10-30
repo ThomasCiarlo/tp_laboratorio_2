@@ -42,7 +42,7 @@ namespace EntidadesAbstractas
       this.Nombre = nombre;
       this.Apellido = apellido;
       this.nacionalidad = nacionalidad;
-      this.dni = dni;
+      this.DNI = dni;
 
     }
 
@@ -123,7 +123,7 @@ namespace EntidadesAbstractas
     {
 
 
-      string retorno = "Nombre incorrecto";
+      string retorno = "Nombre o apellido incorrecto";
 
       if (Regex.IsMatch(dato, @"^[a-zA-Z]+$"))
       {

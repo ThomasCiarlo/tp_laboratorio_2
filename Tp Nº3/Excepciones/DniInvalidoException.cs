@@ -8,13 +8,15 @@ namespace Excepciones
 {
   public class DniInvalidoException : Exception
   {
-    public DniInvalidoException() : this("", null) { }
+    private static string mensajeBase = "El dni contiene un string";
 
-    public DniInvalidoException(Exception e) : this("", e) { }
+    public DniInvalidoException() : this(DniInvalidoException.mensajeBase , null) { }
 
-    public DniInvalidoException(string mensaje) : this(mensaje, null) { }
+    public DniInvalidoException(Exception e) : this(DniInvalidoException.mensajeBase, e) { }
 
-    public DniInvalidoException(string mensaje, Exception e) : base(mensaje, e) { }
+    public DniInvalidoException(string mensaje) : this(DniInvalidoException.mensajeBase, null) { }
+
+    public DniInvalidoException(string mensaje, Exception e) : base(DniInvalidoException.mensajeBase, e) { }
 
   }
 }
