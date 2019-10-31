@@ -9,8 +9,6 @@ C:\Users\Tomas Ciarl\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\obj\D
 C:\Users\Tomas Ciarl\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CopyComplete
 C:\Users\Tomas Ciarl\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\obj\Debug\Clases Instanciables.dll
 C:\Users\Tomas Ciarl\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\obj\Debug\Clases Instanciables.pdb
-C:\Users\alumno\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\obj\Debug\Clases Instanciables.csprojAssemblyReference.cache
-C:\Users\alumno\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CoreCompileInputs.cache
 C:\Users\alumno\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\bin\Debug\Clases Instanciables.dll
 C:\Users\alumno\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\bin\Debug\Clases Instanciables.pdb
 C:\Users\alumno\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\bin\Debug\Archivos.dll
@@ -19,6 +17,8 @@ C:\Users\alumno\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\bin\Debug\
 C:\Users\alumno\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\bin\Debug\Archivos.pdb
 C:\Users\alumno\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\bin\Debug\Clases Abstractas.pdb
 C:\Users\alumno\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\bin\Debug\Excepciones.pdb
+C:\Users\alumno\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\obj\Debug\Clases Instanciables.csprojAssemblyReference.cache
+C:\Users\alumno\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CoreCompileInputs.cache
 C:\Users\alumno\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CopyComplete
 C:\Users\alumno\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\obj\Debug\Clases Instanciables.dll
 C:\Users\alumno\Desktop\tp_laboratorio_2\Tp Nº3\Clases Instanciables\obj\Debug\Clases Instanciables.pdb

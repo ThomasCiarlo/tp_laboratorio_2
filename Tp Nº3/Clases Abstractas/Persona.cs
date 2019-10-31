@@ -42,7 +42,7 @@ namespace EntidadesAbstractas
       this.Nombre = nombre;
       this.Apellido = apellido;
       this.nacionalidad = nacionalidad;
-      this.DNI = dni;
+      this.dni = dni;
 
     }
 
@@ -60,7 +60,8 @@ namespace EntidadesAbstractas
     {
       StringBuilder texto = new StringBuilder();
 
-      texto.AppendFormat($"NOMBRE COMPLETO: {Apellido}, {Nombre}\nNACIONALIDAD: {Nacionalidad}\n");
+      texto.AppendLine($"NOMBRE COMPLETO: {Apellido}, {Nombre}");
+      texto.AppendLine($"NACIONALIDAD: {Nacionalidad}\n");
       return texto.ToString();
     }
 
@@ -110,7 +111,6 @@ namespace EntidadesAbstractas
 
       if (int.TryParse(dato, out int x))
       {
-
         return ValidarDni(nacionalidad, Convert.ToInt32(dato));
       }
       else

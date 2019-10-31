@@ -39,19 +39,26 @@ namespace Clases_Instanciables
     #region Metodos
 
 
-    public bool Guardar(Jornada jornada)
+    public static bool Guardar(Jornada jornada)
     {
+      Texto guardar = new Texto();
+      string archivo = AppDomain.CurrentDomain.BaseDirectory + "texto.txt";
 
-      return true;
+      return guardar.Guardar(archivo, jornada.ToString());
     }
 
-    public bool Leer(Jornada jornada)
+    public static string Leer()
     {
-      StreamReader leer = new StreamReader("");
+      Texto leer = new Texto();
+      string archivo = AppDomain.CurrentDomain.BaseDirectory + "texto.txt";
+      string datos = "";
 
-      leer.Read();
+      if(!(leer.Leer(archivo, out datos)))
+      {
+        datos = "Algo salio mal";
+      }
 
-            return true;
+      return datos;
     }
 
     #endregion
@@ -98,14 +105,14 @@ namespace Clases_Instanciables
     public override string ToString()
     {
       StringBuilder texto = new StringBuilder();
-      texto.Append($"Clase de {this.clases} Por {this.instructor.ToString()}\n");
+      texto.AppendLine($"Clase de {this.clases} Por {this.instructor.ToString()}\n");
 
       foreach (Alumno a in this.alumnos)
       {
-        texto.Append($"{a.ToString()}\n");
+        texto.AppendLine($"{a.ToString()}\n");
       }
 
-      texto.Append("< ------------------------------------------------------------------>");
+      texto.AppendLine("< ------------------------------------------------------------------>");
 
       return texto.ToString();
 

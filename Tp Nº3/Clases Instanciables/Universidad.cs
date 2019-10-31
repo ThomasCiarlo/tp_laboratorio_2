@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Excepciones;
+using Archivos;
 
 namespace Clases_Instanciables
 {
@@ -45,16 +46,26 @@ namespace Clases_Instanciables
 
     #region Metodos
 
-    public bool Guarda(Universidad uni)
+    public static bool Guardar(Universidad uni)
     {
 
-      return true;
-    }
+      Xml<Universidad> cargar = new Xml<Universidad>();
+      string archivo = AppDomain.CurrentDomain.BaseDirectory + "xmlfile.xml";
+
+      return cargar.Guardar(archivo, uni);
+
+     
+    } 
 
     public bool Leer()
     {
 
-      return true;
+      Xml<Universidad> leer = new Xml<Universidad>();
+      string archivo = AppDomain.CurrentDomain.BaseDirectory + "xmlfile.xml";
+      Universidad uni = this;
+
+      return leer.Leer(archivo, out uni);
+
     }
 
     private static string MostrarDatos(Universidad uni)
@@ -62,11 +73,11 @@ namespace Clases_Instanciables
 
       StringBuilder texto = new StringBuilder();
 
-      texto.Append("JORNADA: \n");
+      texto.AppendLine("JORNADA: \n");
 
       foreach (Jornada j in uni.jordanas)
       {
-        texto.Append($"{j.ToString()}\n");
+        texto.AppendLine($"{j.ToString()}\n");
       }
 
       return texto.ToString();

@@ -105,7 +105,7 @@ namespace Tp_n_3
       Console.Clear();
       try
       {
-        //Universidad.Guardar(uni); Descomentar esto una vez que tenga archivos
+        Universidad.Guardar(uni);
         Console.WriteLine("Archivo de Universidad guardado.");
       }
       catch (ArchivosException e)
@@ -115,9 +115,11 @@ namespace Tp_n_3
       try
       {
         int jornada = 0;
-        //Jornada.Guardar(uni[jornada]); Descomentar esto una vez que tenga archivos
+        Jornada.Guardar(uni[jornada]); 
         Console.WriteLine("Archivo de Jornada {0} guardado.", jornada);
-        //Console.WriteLine(Jornada.Leer());
+        Console.ReadKey();
+        Console.Clear();
+        Console.WriteLine(Jornada.Leer());
       }
       catch (ArchivosException e)
       {

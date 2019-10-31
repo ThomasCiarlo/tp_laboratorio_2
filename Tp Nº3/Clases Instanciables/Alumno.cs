@@ -41,8 +41,8 @@ namespace Clases_Instanciables
     protected override string MostrarDatos()
     {
       StringBuilder texto = new StringBuilder(base.MostrarDatos());
-      texto.Append($"\nEstado de cuenta: {this.estadoDeCuenta}\n");
-      texto.Append($"{this.ParticiparEnClase()}\n");
+      texto.AppendLine($"\nEstado de cuenta: {this.estadoDeCuenta}\n");
+      texto.AppendLine($"{this.ParticiparEnClase()}\n");
 
       return texto.ToString();
     }

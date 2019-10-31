@@ -40,7 +40,7 @@ namespace Clases_Instanciables
     protected override string MostrarDatos()
     {
       StringBuilder texto = new StringBuilder(base.MostrarDatos());
-      texto.Append($"{this.ParticiparEnClase()}");
+      texto.AppendLine($"{this.ParticiparEnClase()}");
 
       return texto.ToString();
     }
