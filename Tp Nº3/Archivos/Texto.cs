@@ -44,7 +44,7 @@ namespace Archivos
 
         while (!leer.EndOfStream)
         {
-          dato += leer.ReadLine();
+          dato +=leer.ReadLine() + "\n";
         }
         leer.Close();
       }

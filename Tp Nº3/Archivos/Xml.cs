@@ -19,6 +19,7 @@ namespace Archivos
 
       try
       {
+
         XmlTextWriter writer;
         writer = new XmlTextWriter(archivo, System.Text.Encoding.UTF8);
         XmlSerializer ser;

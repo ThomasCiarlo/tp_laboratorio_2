@@ -117,9 +117,10 @@ namespace Tp_n_3
         int jornada = 0;
         Jornada.Guardar(uni[jornada]); 
         Console.WriteLine("Archivo de Jornada {0} guardado.", jornada);
+        /* PARA PROBAR EL ARCHIVO DE TEXTO GENERADO
         Console.ReadKey();
         Console.Clear();
-        Console.WriteLine(Jornada.Leer());
+        Console.WriteLine(Jornada.Leer());*/
       }
       catch (ArchivosException e)
       {

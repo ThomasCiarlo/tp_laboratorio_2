@@ -45,6 +45,7 @@ namespace Clases_Instanciables
       return texto.ToString();
     }
 
+
     protected override string ParticiparEnClase()
     {
       StringBuilder texto = new StringBuilder("Clases del dia: ");
@@ -53,7 +54,7 @@ namespace Clases_Instanciables
       foreach (Universidad.EClases c in this.clasesDelDia)
       {
 
-        texto.Append(c + "\n");
+        texto.AppendLine(c.ToString());
 
       }
       return texto.ToString();

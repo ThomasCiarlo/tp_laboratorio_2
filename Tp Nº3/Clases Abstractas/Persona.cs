@@ -61,7 +61,7 @@ namespace EntidadesAbstractas
       StringBuilder texto = new StringBuilder();
 
       texto.AppendLine($"NOMBRE COMPLETO: {Apellido}, {Nombre}");
-      texto.AppendLine($"NACIONALIDAD: {Nacionalidad}\n");
+      texto.AppendLine($"NACIONALIDAD: {Nacionalidad}");
       return texto.ToString();
     }
 
