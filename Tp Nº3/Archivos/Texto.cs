@@ -4,61 +4,63 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using Excepciones;
 
 namespace Archivos
 {
-  public class Texto : IArchivo<string>
-  {
-    public bool Guardar(string archivo, string datos)
+    public class Texto : IArchivo<string>
     {
-      bool todoOk = true;
-
-      try
-      {
-
-        StreamWriter escribir = new StreamWriter(archivo);
-        escribir.WriteLine(datos);
-        escribir.Close();
-
-      }
-      catch (Exception)
-      {
-
-        todoOk = false;
-      }
-
-      return todoOk;
-
-    }
-
-    public bool Leer(string archivo, out string datos)
-    {
-
-      bool todoOk = true;
-      string dato = "";
-      
-
-      try
-      {
-        StreamReader leer = new StreamReader(archivo);
-
-        while (!leer.EndOfStream)
+        public bool Guardar(string archivo, string datos)
         {
-          dato +=leer.ReadLine() + "\n";
+            bool todoOk = true;
+
+            try
+            {
+
+                StreamWriter escribir = new StreamWriter(archivo);
+                escribir.WriteLine(datos);
+                escribir.Close();
+
+            }
+            catch (Exception e)
+            {
+
+                todoOk = false;
+                throw new ArchivosException(e);
+            }
+
+            return todoOk;
+
         }
-        leer.Close();
-      }
-      catch (Exception)
-      {
-        todoOk = false;
 
-      }
+        public bool Leer(string archivo, out string datos)
+        {
 
-      datos = dato;
+            bool todoOk = true;
+            string dato = "";
 
-      return todoOk;
+
+            try
+            {
+                StreamReader leer = new StreamReader(archivo);
+
+                while (!leer.EndOfStream)
+                {
+                    dato += leer.ReadLine() + "\n";
+                }
+                leer.Close();
+            }
+            catch (Exception e)
+            {
+                todoOk = false;
+                throw new ArchivosException(e);
+            }
+
+            datos = dato;
+
+            return todoOk;
+        }
+
+
     }
-
-
-  }
 }

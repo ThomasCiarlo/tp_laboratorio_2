@@ -3,3 +3,7 @@ C:\Users\TCiarlo\Desktop\Facultad\Tp N°3\Entidades\bin\Debug\Entidades.pdb
 C:\Users\TCiarlo\Desktop\Facultad\Tp N°3\Entidades\obj\Debug\Entidades.dll
 C:\Users\TCiarlo\Desktop\Facultad\Tp N°3\Entidades\obj\Debug\Entidades.pdb
 C:\Users\TCiarlo\Desktop\Facultad\Tp N°3\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp N°4\Entidades\bin\Debug\Entidades.dll
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp N°4\Entidades\bin\Debug\Entidades.pdb
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp N°4\Entidades\obj\Debug\Entidades.dll
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp N°4\Entidades\obj\Debug\Entidades.pdb

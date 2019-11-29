@@ -6,28 +6,29 @@ using System.Threading.Tasks;
 
 namespace tp1
 {
-   public class Calculadora
+    public class Calculadora
     {
-        public Calculadora() {
 
-        }
+        private static string ValidarOperador(string operador)
+        {
 
-        private static string ValidarOperador(string operador) {
-
-            if (!(operador == "+" || operador == "-" || operador == "*" || operador == "/")) {
+            if (!(operador == "+" || operador == "-" || operador == "*" || operador == "/"))
+            {
                 operador = "+";
             }
 
             return operador;
         }
 
-        public static double Operar(Numero num1, Numero num2, string operador) {
+        public static double Operar(Numero num1, Numero num2, string operador)
+        {
 
             double total = 0;
 
-            
 
-            switch (ValidarOperador(operador)) {
+
+            switch (ValidarOperador(operador))
+            {
                 case "+":
                     total = num1 + num2;
                     break;

@@ -124,6 +124,15 @@ namespace MainCorreo
                 rtbMostrar.Text += elemento.MostrarDatos(elemento);
             }
 
+            try
+            {
+                this.rtbMostrar.Text.Guardar("salida.txt");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al guardar archivo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
 
@@ -144,5 +153,6 @@ namespace MainCorreo
         {
             this.MostrarInformacion<Paquete>((IMostrar<Paquete>)lstEstadoEntregado.SelectedItem);
         }
+
     }
 }

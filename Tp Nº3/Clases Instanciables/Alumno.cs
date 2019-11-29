@@ -38,6 +38,7 @@ namespace Clases_Instanciables
 
     #region Metodos
 
+
     protected override string MostrarDatos()
     {
       StringBuilder texto = new StringBuilder(base.MostrarDatos());
@@ -82,7 +83,7 @@ namespace Clases_Instanciables
     public static bool operator !=(Alumno alumno, Universidad.EClases clases)
     {
 
-      return !(alumno == clases);
+         return alumno.clasesQueToma != clases;
     }
 
 
