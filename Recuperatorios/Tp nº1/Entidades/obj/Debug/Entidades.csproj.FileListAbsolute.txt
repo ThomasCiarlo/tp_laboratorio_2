@@ -1,0 +1,11 @@
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Entidades\bin\Debug\Entidades.dll
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Entidades\obj\Debug\Entidades.dll
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Entidades\obj\Debug\Entidades.pdb
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Entidades\bin\Debug\Entidades.dll
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Entidades\bin\Debug\Entidades.pdb
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Entidades\obj\Debug\Entidades.dll
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Entidades\obj\Debug\Entidades.pdb

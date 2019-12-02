@@ -1,0 +1,25 @@
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\bin\Debug\tp1.exe.config
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\bin\Debug\tp1.exe
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\bin\Debug\tp1.pdb
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\bin\Debug\Entidades.dll
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\bin\Debug\Entidades.pdb
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\Mi calculadora.csprojAssemblyReference.cache
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\tp1.FromCalculadora.resources
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\tp1.Properties.Resources.resources
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\Mi calculadora.csproj.GenerateResource.cache
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\Mi calculadora.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\Mi calculadora.csproj.CopyComplete
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\tp1.exe
+C:\Users\thoma\Desktop\Facu\2 cuatrimestre\Tps y Ejercicios\tp_laboratorio_2\Tp n°1\obj\Debug\tp1.pdb
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Mi calculadora\bin\Debug\tp1.exe.config
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Mi calculadora\bin\Debug\tp1.exe
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Mi calculadora\bin\Debug\tp1.pdb
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Mi calculadora\bin\Debug\Entidades.dll
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Mi calculadora\bin\Debug\Entidades.pdb
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Mi calculadora\obj\Debug\Mi calculadora.csprojAssemblyReference.cache
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Mi calculadora\obj\Debug\tp1.FromCalculadora.resources
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Mi calculadora\obj\Debug\tp1.Properties.Resources.resources
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Mi calculadora\obj\Debug\Mi calculadora.csproj.GenerateResource.cache
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Mi calculadora\obj\Debug\Mi calculadora.csproj.CopyComplete
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Mi calculadora\obj\Debug\tp1.exe
+C:\Users\TCiarlo\Desktop\tp_laboratorio_2\Tp nº1\Mi calculadora\obj\Debug\tp1.pdb
